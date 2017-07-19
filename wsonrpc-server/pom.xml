@@ -23,5 +23,13 @@
 			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<!-- Java-WebSocket -->
+		<dependency>
+			<groupId>org.java-websocket</groupId>
+			<artifactId>Java-WebSocket</artifactId>
+			<version>${version.org.java-websocket}</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 </project>

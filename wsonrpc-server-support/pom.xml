@@ -22,14 +22,6 @@
             <artifactId>wsonrpc-server</artifactId>
         </dependency>
 
-        <!-- Java-WebSocket -->
-        <dependency>
-            <groupId>org.java-websocket</groupId>
-            <artifactId>Java-WebSocket</artifactId>
-            <version>${version.org.java-websocket}</version>
-            <scope>provided</scope>
-        </dependency>
-
         <!-- netty -->
         <dependency>
             <groupId>io.netty</groupId>
