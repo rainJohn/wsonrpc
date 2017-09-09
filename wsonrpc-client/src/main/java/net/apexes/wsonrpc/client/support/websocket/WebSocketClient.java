@@ -117,9 +117,9 @@ public class WebSocketClient {
     }
     
     /**
-     * Must be called before connect(). Set the handler for all websocket-related events.
+     * Must be called before connect(). Set the support for all websocket-related events.
      *
-     * @param eventHandler The handler to be triggered with relevant events
+     * @param eventHandler The support to be triggered with relevant events
      */
     public void setEventHandler(WebSocketEventHandler eventHandler) {
         this.eventHandler = eventHandler;
@@ -131,7 +131,7 @@ public class WebSocketClient {
     
     /**
      * Start up the socket. This is non-blocking, it will fire up the threads used by the library and then trigger the
-     * onOpen handler once the connection is established.
+     * onOpen support once the connection is established.
      */
     public synchronized void connect() {
         if (state != State.NONE) {
@@ -193,7 +193,7 @@ public class WebSocketClient {
     }
     
     /**
-     * Close down the socket. Will trigger the onClose handler if the socket has not been previously closed.
+     * Close down the socket. Will trigger the onClose support if the socket has not been previously closed.
      */
     public synchronized void close() {
         switch (state) {

@@ -199,7 +199,7 @@ public abstract class NanoHTTPD {
                 // SocketTimeoutException, print the
                 // stacktrace
                 if (!(e instanceof SocketException && "NanoHttpd Shutdown".equals(e.getMessage())) && !(e instanceof SocketTimeoutException)) {
-                    NanoHTTPD.LOG.log(Level.SEVERE, "Communication with the client broken, or an bug in the handler code", e);
+                    NanoHTTPD.LOG.log(Level.SEVERE, "Communication with the client broken, or an bug in the support code", e);
                 }
             } finally {
                 safeClose(outputStream);
@@ -1965,14 +1965,14 @@ public abstract class NanoHTTPD {
     }
 
     /**
-     * create a instance of the client handler, subclasses can return a subclass
+     * create a instance of the client support, subclasses can return a subclass
      * of the ClientHandler.
      * 
      * @param finalAccept
      *            the socket the cleint is connected to
      * @param inputStream
      *            the input stream
-     * @return the client handler
+     * @return the client support
      */
     protected ClientHandler createClientHandler(final Socket finalAccept, final InputStream inputStream) {
         return new ClientHandler(inputStream, finalAccept);
